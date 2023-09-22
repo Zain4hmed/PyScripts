@@ -1,10 +1,9 @@
 # PyScripts
 A repo which contains all the useful and time saving scripts 
 
+<pre>
 wifi.py --> a scripts which shows you all yours previously connected wifi networks along with their passwords (Windows only)
 Example output : 
-----------------------------------------------------------------------------------------------------------------------------
-<pre>
 Select a sorting option:
 1. Print profiles in original order
 2. Group profiles with the same password together
