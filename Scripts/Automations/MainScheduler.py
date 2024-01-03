@@ -3,13 +3,16 @@ import schedule
 import time
 import subprocess
 
+
 def execute_python_file(file_path):
     # Use subprocess to run the Python file as a separate process
     subprocess.run(['python', file_path])
 
+
 def job(file_path):
     print(f"Executing {file_path} at {time.strftime('%Y-%m-%d %H:%M:%S')}...")
     execute_python_file(file_path)
+
 
 def schedule_jobs(folder_path, schedule_dict):
     # Get a list of all Python files in the specified folder
@@ -23,15 +26,16 @@ def schedule_jobs(folder_path, schedule_dict):
             scheduled_time = schedule_dict[python_file]
             schedule.every().day.at(scheduled_time).do(job, file_path)
 
+
 if __name__ == "__main__":
     # Specify the folder containing the Python files to be executed
     folder_path = 'C:\\Users\\zaina\\PyScripts\\Scripts\\Automations\\AutomationScripts'
 
     # Define the schedule for each Python file (replace with your desired times)
     schedule_dict = {
-        'script1.py': '08:20'
-        # 'script2.py': '12:30',
-        # 'script3.py': '18:45',
+        'script1.py': '08:50',
+        'script2.py': '08:51',
+        'script3.py': '08:52',
     }
 
     # Schedule the jobs
