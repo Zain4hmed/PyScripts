@@ -21,6 +21,7 @@ def update_streak_file(repo_path):
     return current_date
 
 def commit_and_push_changes(repo_path, commit_message):
+
     # Change working directory to the repository
     os.chdir(repo_path)
 
