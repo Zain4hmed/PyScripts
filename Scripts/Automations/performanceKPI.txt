@@ -1,3 +1,0 @@
-on ideal it was on average 10 % usage 
-on running script on scheduler it was on average : 12%
-on running script on scheduler an when script was hit : ??%
