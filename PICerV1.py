@@ -6,11 +6,11 @@ from tqdm import tqdm
 import time
 
 # Define the endpoint URL
-url = "http://localhost:8080/api/files/upload"
-# url = "https://picer-production.up.railway.app/api/files/upload"
+# url = "http://localhost:8080/api/files/upload"
+url = "https://eventvibes-album-maker.up.railway.app/api/files/upload"
 
 # Function to compress images
-def compress_images(source_folder, target_folder, quality=50):
+def compress_images(source_folder, target_folder, quality=15):
     if not os.path.exists(target_folder):
         os.makedirs(target_folder)
 
